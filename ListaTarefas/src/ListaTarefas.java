@@ -8,5 +8,17 @@ public abstract class ListaTarefas {
         return listaTarefas;
     }
 
+    public static Tarefa buscarTarefa(String titulo) {
+
+        for (Tarefa tempTarefa : listaTarefas) {
+            if (tempTarefa.getTitulo().contains(titulo)) {
+                return tempTarefa;
+            }
+        }
+
+        return null;
+
+    }
+
     
 }
