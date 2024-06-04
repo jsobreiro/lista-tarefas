@@ -8,5 +8,9 @@ public abstract class ListaTarefas {
         return listaTarefas;
     }
 
+    public static void cadastrarTarefa(Tarefa tarefa) {
+        listaTarefas.add(tarefa);
+    }
+
     
 }
