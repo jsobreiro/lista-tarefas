@@ -4,15 +4,6 @@ public abstract class ListaTarefas {
 
     private static ArrayList<Tarefa> listaTarefas = new ArrayList<>();
 
-    
-    
-    
-    
-    
-    public static ArrayList<Tarefa> listarTarefas() {
-        return listaTarefas;
-    }
-
 
     public static void cadastrarTarefa(Tarefa tarefa) {
         listaTarefas.add(tarefa);
@@ -35,5 +26,9 @@ public abstract class ListaTarefas {
         listaTarefas.remove(tarefa);
     }
 
+
+    public static ArrayList<Tarefa> getListaTarefas() {
+        return listaTarefas;
+    }
     
 }
