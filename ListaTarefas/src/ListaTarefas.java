@@ -26,5 +26,9 @@ public abstract class ListaTarefas {
 
     }
 
+    public static void excluirTarefa(Tarefa tarefa) {
+        listaTarefas.remove(tarefa);
+    }
+
     
 }
