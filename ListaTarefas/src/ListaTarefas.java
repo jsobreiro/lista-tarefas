@@ -4,7 +4,12 @@ public abstract class ListaTarefas {
 
     private static ArrayList<Tarefa> listaTarefas = new ArrayList<>();
 
-    public static ArrayList<Tarefa> getListaTarefas() {
+    
+    
+    
+    
+    
+    public static ArrayList<Tarefa> listarTarefas() {
         return listaTarefas;
     }
 
