@@ -13,7 +13,7 @@ public abstract class ListaTarefas {
         listaTarefas.add(tarefa);
     }
 
-    public static Tarefa buscarTarefa(String titulo) {
+    public static Tarefa buscarTarefa(String titulo) throws Exception {
 
         for (Tarefa tempTarefa : listaTarefas) {
             if (tempTarefa.getTitulo().contains(titulo)) {
@@ -21,7 +21,7 @@ public abstract class ListaTarefas {
             }
         }
 
-        return null;
+       throw new Exception("\nTarefa não localizada");
 
 
     }
